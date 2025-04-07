@@ -1,17 +1,45 @@
-
+/* Estilo general del cuerpo */
 body {
     font-family: Arial, sans-serif;
     color: black;
-    background-color: rgb(255, 255, 0);
+    background-color: #ffffff; /* más limpio con notación hex */
 }
-
-
+ 
+/* Contenedor de imagen */
 .image-container {
-    text-align: left;
     margin-top: 10px;
+    text-align: left;
 }
-
-img {
-    max-width: 20%;
-    height: auto;
+ 
+/* Imagen redonda */
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;     /* hace que la imagen sea redonda */
+    object-fit: cover;      /* mantiene proporción sin deformarla */
+    border: 3px solid black;
+}
+ 
+.image-container {
+    text-align: center;
+}
+ 
+ 
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+ 
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+ 
+.about-content {
+    max-width: 600px;
 }
