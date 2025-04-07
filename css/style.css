@@ -2,44 +2,70 @@
 body {
     font-family: Arial, sans-serif;
     color: black;
-    background-color: #ffffff; /* más limpio con notación hex */
+    background-color: #ffffff; 
 }
  
 /* Contenedor de imagen */
 .image-container {
-    margin-top: 10px;
-    text-align: left;
+    margin-top: 10px;     /*agrega espacio arriba */
+    text-align: left;     /*align es alinear */
 }
  
 /* Imagen redonda */
 .image-container img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;     /* hace que la imagen sea redonda */
-    object-fit: cover;      /* mantiene proporción sin deformarla */
-    border: 3px solid black;
+    height: 150px;                    /*  hace que la imagen sea redonda */
+    object-fit: cover;        /* mantiene tamaño sin que se altere la imagen */
+    border: 3px solid black;  /*border pues añade borde */
 }
  
-.image-container {
-    text-align: center;
+.image-container {           /* image container basicamente pone el contenido de la imagen en este claso, al centor */
+    text-align: center; 
 }
- 
  
 .about-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex;               /*flex lo que hace es que pone un elemento al lado del otro (imagen y texto f,e */
+    align-items: center;                     /* alinea */
+    gap: 20px;              /* gap hace referencia al espacio entre ellos */
     margin: 20px 0;
 }
  
 .image-container img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    height: 150px;                         /* ajusta tamaño y borde */
+    border-radius: 50%;                     /*radius es lo redondito de la imagen */
+    object-fit: cover;                    
     border: 3px solid black;
 }
  
 .about-content {
     max-width: 600px;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #e6f0fa; /* azul clarito */
+    color: #333;
+    border: 1px solid #ccc; /* gris claro */
+    padding: 10px; /*distancia entre el borde y el texto */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* permite redimensionar solo verticalmente - como un wrap */
+    min-height: 100px;
+}
+.about-section {
+    background-color: #ffeef2; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
