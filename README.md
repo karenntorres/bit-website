@@ -1,2 +1,2 @@
 # bit-website 
-Hola
+Primer ejercicio de integración de HTML y CSS 
