@@ -1,71 +1,59 @@
-/* Estilo general del cuerpo */
+/* color general */
 body {
     font-family: Arial, sans-serif;
-    color: black;
-    background-color: #ffffff; 
+    color: #4b4b4b;
+    background-color: #f9f3ff; /* lavanda pastel aesthetic */
+    margin: 0;
+    padding: 0;
 }
- 
-/* Contenedor de imagen */
+
+/* color "About Me" */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    background-color: #fddde6; /* rosado pastel */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* tamaño imagen */
 .image-container {
-    margin-top: 10px;     /*agrega espacio arriba */
-    text-align: left;     /*align es alinear */
+    margin-top: 10px;
+    text-align: center;
 }
- 
+
 /* Imagen redonda */
 .image-container img {
     width: 150px;
-    height: 150px;                    /*  hace que la imagen sea redonda */
-    object-fit: cover;        /* mantiene tamaño sin que se altere la imagen */
-    border: 3px solid black;  /*border pues añade borde */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d6a4c4; /* rosado medio */
 }
- 
-.image-container {           /* image container basicamente pone el contenido de la imagen en este claso, al centor */
-    text-align: center; 
-}
- 
-.about-section {
-    display: flex;               /*flex lo que hace es que pone un elemento al lado del otro (imagen y texto f,e */
-    align-items: center;                     /* alinea */
-    gap: 20px;              /* gap hace referencia al espacio entre ellos */
-    margin: 20px 0;
-}
- 
-.image-container img {
-    width: 150px;
-    height: 150px;                         /* ajusta tamaño y borde */
-    border-radius: 50%;                     /*radius es lo redondito de la imagen */
-    object-fit: cover;                    
-    border: 3px solid black;
-}
- 
+
+/* Contenido dentro de "About Me" */
 .about-content {
     max-width: 600px;
 }
 
+/* Estilos para formularios (input y textarea) */
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #e6f0fa; /* azul clarito */
-    color: #333;
-    border: 1px solid #ccc; /* gris claro */
-    padding: 10px; /*distancia entre el borde y el texto */
-    border-radius: 5px;
+    background-color: #ffeef8; /* rosa clarito */
+    color: #4b4b4b;
+    border: 1px solid #e2b8c8;
+    padding: 10px;
+    border-radius: 8px;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     box-sizing: border-box;
 }
 
 textarea {
-    resize: vertical; /* permite redimensionar solo verticalmente - como un wrap */
+    resize: vertical;
     min-height: 100px;
 }
-.about-section {
-    background-color: #ffeef2; 
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
