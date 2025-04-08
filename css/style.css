@@ -4,7 +4,7 @@ body {
     color: #4b4b4b;
     background-color: #f9f3ff; /* lavanda pastel aesthetic */
     margin: 0;
-    padding: 0;
+    padding: 20px; /*espacio entre el borde y el texto */
 }
 
 /* color "About Me" */
