@@ -13,6 +13,5 @@ CSS (archivo externo, orden, variables, fuentes, colores)
 Responsive
 576px
 768px
-<<<<<<< HEAD
 992px
-=======
+
