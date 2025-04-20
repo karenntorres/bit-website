@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./css/style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="assets/detective.png" type="image/png">
+
 </head>
 
 <body>
-    <hr>
+  <div class="image-container">
+    <img src="assets/PP.jpg" alt="PP" />
+  </div>
+<hr>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  
+  </nav>
 
-    <nav>
-        <ul>
-            <li><a href="#contact">Contact</a></li> 
-        </ul>
-        <aside>
-            <!-- GitHub -->
-            <a href="https://github.com/karenntorres" target="_blank">Visit my GitHub</a>
-        </aside>
-    </nav>
+  <hr>
 
-    <hr>
 
-    <h1>Puedes ingresar con</h1>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+  <h1>You can register here: </h1>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+  <!-- Formulario -->
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+    <br>
 
-        <button type="submit">Enviar</button>
-    </form>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-    <hr>
+    <br>
 
-    <footer>
-        <p>© 2025 - Todos los derechos reservados</p>
-    </footer>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Type your message here"></textarea> <!--El placeholder es el mensaje that shows in the box as an example to the user-->
+
+    <br>
+
+    <label for="date">Date of birth</label>
+    <input type="date" id="date" name="date">
+
+    <br>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <hr>
+
+  
+  <footer>
+    <p>© 2025 - Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>
