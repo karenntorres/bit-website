@@ -34,7 +34,7 @@ header {
 }
 
 .about-section h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /*tamaño letra */
     color: var(--color-texto);
     margin-bottom: 15px;
 }
@@ -247,7 +247,7 @@ form button:hover {
 }
 
 .hobby-item:hover {
-    transform: translateY(-5px); /* hover hace que esto tenga como un efecto de sombra al pasar el mouse y con trasnform le da un aprox de tamaño*/
+    transform: translateY(-5px); /* hover hace que esto tenga como un efecto de sombra al pasar el mouse y con transform le da un aprox de tamaño*/
 }
 
 /* Color de títulos de cada hobby */
