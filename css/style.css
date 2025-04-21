@@ -34,7 +34,7 @@ header {
 }
 
 .about-section h1 {
-    font-size: 2.5em; /*tamaño letra */
+    font-size: 2.5em;
     color: var(--color-texto);
     margin-bottom: 15px;
 }
@@ -50,6 +50,8 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--color-texto); 
+    display: block;
+    margin: 0 auto;
 }
 
 .about-content {
@@ -95,43 +97,22 @@ table th, table td {
 }
 
 table th {
-    background-color: var(--fondo-general);       /*fondo del title: name and age */
+    background-color: var(--fondo-general);
 }
 
 /* Footer */
 footer {
+    background-color: var(--color-about);
     text-align: center;
     padding: 20px;
-    background-color: var(--fondo-general);
     color: var(--color-texto);
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 15px;
-    }
-
-    .about-section h1 {
-        font-size: 2em;
-    }
-
-    .about-content {
-        font-size: 1em;
-    }
-
-    .image-container img {
-        width: 120px;
-        height: 120px;
-    }
-
-    section {
-        padding: 15px;
-    }
+footer p {
+    font-size: 0.9em;
 }
 
-
-/* Estilos para formularios (input y textarea) */
+/* Estilos para formularios */
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -168,14 +149,12 @@ form {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
   
-/* Estilo para etiquetas y entradas */
 form label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
 }
   
-/* Botón */
 form button {
     margin-top: 20px;
     padding: 10px 15px;
@@ -193,17 +172,7 @@ form button:hover {
     background-color: var(--btn-hover);
 }
 
-/* HOBBIES */
-.image-container img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover; /* esto hace que se ajuste la imagen en su espacio, básicamente es como el relleno*/
-    border: 2px solid var(--color-texto); 
-    display: block; /*elemento bloque */
-    margin: 0 auto; /* el auto hace que el navegador distribuya el margen left and right por igual y de manera automática */
-}
-
+/* Hobbies */
 #hobbies {
     background-color: var(--color-about);
     padding: 40px;
@@ -214,21 +183,18 @@ form button:hover {
     text-align: center;
 }
 
-/* Título principal */
 #hobbies h1 {
     font-size: 2.5em;
     color: var(--color-texto);
     margin-bottom: 20px;
 }
 
-/* Descripción */
 #hobbies p {
     font-size: 1.2em;
     color: var(--color-texto);
     margin-bottom: 30px;
 }
 
-/* Lista de hobbies */
 .hobby-list {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +202,6 @@ form button:hover {
     gap: 20px;
 }
 
-/* Estilo para cada item de hobby */
 .hobby-item {
     background-color: var(--fondo-form);
     padding: 20px;
@@ -247,36 +212,89 @@ form button:hover {
 }
 
 .hobby-item:hover {
-    transform: translateY(-5px); /* hover hace que esto tenga como un efecto de sombra al pasar el mouse y con transform le da un aprox de tamaño*/
+    transform: translateY(-5px);
 }
 
-/* Color de títulos de cada hobby */
 .hobby-item h2 {
     font-size: 1.8em;
     color: var(--color-texto);
     margin-bottom: 15px;
 }
 
-/* Color de descripción de cada hobby */
 .hobby-item p {
     font-size: 1.1em;
     color: var(--color-texto);
 }
 
-/* Footer */
-footer {
-    background-color: var(--color-about);
-    text-align: center;
-    padding: 20px;
-    color: var(--color-texto);
+/* Breakpoints personalizados para responsividad */
+/* Extra small (≤576px) */
+@media (max-width: 576px) {
+    .about-section {
+        padding: 10px;
+    }
+
+    .about-section h1,
+    #hobbies h1 {
+        font-size: 1.8em;
+    }
+
+    .about-content,
+    #hobbies p,
+    .hobby-item p {
+        font-size: 1em;
+    }
+
+    .image-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .hobby-item {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+        max-width: 100%;
+    }
+
+    form {
+        margin: 20px 10px;
+    }
 }
 
-footer p {
-    font-size: 0.9em;
-}
-
-/* Responsividad para small device */
+/* Small (≤768px) */
 @media (max-width: 768px) {
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section h1,
+    #hobbies h1 {
+        font-size: 2em;
+    }
+
+    .about-content,
+    #hobbies p,
+    .hobby-item p {
+        font-size: 1em;
+    }
+
+    .image-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
     .hobby-list {
         flex-direction: column;
         align-items: center;
@@ -284,5 +302,22 @@ footer p {
 
     .hobby-item {
         width: 80%;
+    }
+}
+
+/* Medium (≤992px) */
+@media (max-width: 992px) {
+    .hobby-list {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .hobby-item {
+        width: 45%;
+    }
+
+    .about-section,
+    section {
+        margin: 10px;
     }
 }
