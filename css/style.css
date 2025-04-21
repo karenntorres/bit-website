@@ -226,7 +226,7 @@ form button:hover {
     color: var(--color-texto);
 }
 
-/* Breakpoints personalizados para responsividad */
+
 /* Extra small (≤576px) */
 @media (max-width: 576px) {
     .about-section {
@@ -305,7 +305,7 @@ form button:hover {
     }
 }
 
-/* Medium (≤992px) */
+/* Medio (≤992px) */
 @media (max-width: 992px) {
     .hobby-list {
         justify-content: center;
