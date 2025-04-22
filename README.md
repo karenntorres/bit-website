@@ -1,17 +1,24 @@
-# bit-website 
-Primer ejercicio de integración de HTML y CSS 
-royectos Calificables
-Crear un sitio web
-Tema: Personal (acerca de si mismo)
-Fecha de entrega: Lunes, Abril 21, 2025
-Entrega: Nombre + Apellido + URL en canal de Discord
-Repositorio: "bit-website"
-README.md
-En línea (URL de acceso público)
-HTML (más de un documento, estructura, contenido original)
-CSS (archivo externo, orden, variables, fuentes, colores)
-Responsive
-576px
-768px
-992px
+Proyecto: Sitio Web Personal
+Descripción:
+Primer ejercicio de integración HTML y CSS — creación de un sitio web personal (acerca de ti).
 
+Entrega:
+📅 Lunes, 21 de abril de 2025
+📍 Enviar nombre, apellido y URL en el canal de Discord
+📁 Repositorio: bit-website
+
+Requisitos:
+
+HTML (estructura con múltiples documentos y contenido original)
+
+CSS externo (uso de variables, fuentes, colores, ordenado)
+
+Diseño responsivo:
+
+✅ 576px
+
+✅ 768px
+
+✅ 992px
+
+Sitio accesible en línea (URL pública)
